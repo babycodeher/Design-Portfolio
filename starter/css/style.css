@@ -33,25 +33,31 @@ header{
 
 .tagline {
   box-sizing: content-box;
-  width: 220px;
+  width: 300px;
   height: 50px;
   background: #70484b;
-  align-items: center;
 }
   
 
-h1{
+h1 {
   font-size: 50px;
   margin: auto;
   padding-left: 40px;
 }
 
-h2{
-  
+h2 {
+  font-size: 40px;
 }
 
-h3,
-h4,
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 200;
+}
+
 h5,
 h6 {
   margin: 0;
@@ -78,20 +84,30 @@ p {
 
 #navBar h1{
   width: 80%;
-  font-weight: 100;
+  /* font-weight: 100; */
   color: #010101;
 }
 
 #sampleWork {
   margin: 0px 5%;
   display: grid;
-  grid-template-rows: 250px 250px 250px 250px;
+  margin-bottom: 50px;
+  grid-template-rows: 200px 200px 200px 200px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
   "surf surf"
   "surf surf"
   "LED calculator"
   "pastel runbuddy";
+}
+
+.heading{
+  background-color: #70484b;
+  height: 70px;
+  color: white;
+  position: static;
+  max-width: fit-content;
+  margin: 20px -0.5px;
 }
 
 .categoryWorkGrid {
