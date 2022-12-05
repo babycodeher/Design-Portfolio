@@ -31,10 +31,13 @@ header{
 }
 
 .tagline {
-  box-sizing: content-box;
   width: 300px;
   height: 50px;
   background: #70484b;
+  margin-bottom: 20px;
+  flex: 0 0 90%;
+  margin-left: 80%;
+
 } 
 
 h1 {
@@ -48,16 +51,24 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 30px;
+  /* align-items: center; */
+  margin: 10px auto;
+  padding-left: 5px 10%;
+  line-height: 1.2;
+  display: inline;
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 1.8rem;
   font-weight: 200;
+  margin: 0;
 }
 
 h5 {
-  
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
 }
 
 h6 {
@@ -65,8 +76,11 @@ h6 {
 }
 
 p {
-  margin: 0;
+  text-justify: auto;
+  font-size: 20px;
+  margin: 0.5;
 }
+
 
 #navigation {
   display: flex;
@@ -102,14 +116,15 @@ p {
   "pastel runbuddy";
 }
 #aboutMe {
-  margin: 0px 5%;
+  margin: 0px 6%;
   display: grid;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   grid-template-rows: 250px;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 65% 35%;
   grid-template-areas:
   "textaboutme profilepicture";
 }
+
 
 .page-section {
   text-align: end;
@@ -118,11 +133,10 @@ p {
 
 .heading {
   background-color: #70484b;
-  height: 70px;
   color: white;
-  position: relative;
   max-width: fit-content;
-  margin: 20px 0.5px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .categoryWorkGrid {
@@ -135,7 +149,7 @@ p {
   cursor: pointer;
   border: solid;
   border-color: #70484b;
-  border-width: 0.4em;
+  border-width: 0.5em;
 }
 
 #surf {
@@ -167,6 +181,13 @@ p {
   grid-area: profilepicture;
   background-image: url("../images/profile-headshot.jpg");
   background-size: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px black;
+}
+
+#textaboutme {
+  padding-right: 2em;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 70em) {
