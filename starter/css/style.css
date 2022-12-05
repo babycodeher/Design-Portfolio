@@ -30,14 +30,12 @@ header{
   align-content: flex-end;
 }
 
-
 .tagline {
   box-sizing: content-box;
   width: 300px;
   height: 50px;
   background: #70484b;
-}
-  
+} 
 
 h1 {
   font-size: 50px;
@@ -58,7 +56,10 @@ h4 {
   font-weight: 200;
 }
 
-h5,
+h5 {
+  
+}
+
 h6 {
   margin: 0;
 }
@@ -146,4 +147,37 @@ p {
 #runbuddy {
   grid-area: runbuddy;
   background-image: url("../images/02-run-buddy.jpg");
+}
+
+@media only screen and (max-width: 70em) {
+  #navigation {
+    display: none; 
+  }
+  .icons {
+    margin-left: auto; 
+  }
+  body{
+    background-color: rgb(227, 230, 230);
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  body{
+    background-color: whitesmoke;
+  }
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+
+  #sampleWork {
+    grid-template-rows: 200px 200px 200px 200px 200px; 
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "surf"
+    "LED"
+    "calculator" 
+    "pastel" 
+    "runbuddy";
+  }
 }
