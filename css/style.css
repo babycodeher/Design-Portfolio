@@ -178,6 +178,7 @@ p {
   grid-area: profilepicture;
   background-image: url("../images/profile-headshot.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
   border-radius: 20px;
   box-shadow: 5px 10px 10px black;
 }
@@ -227,4 +228,14 @@ p {
     "pastel" 
     "runbuddy";
   }
+
+  #aboutMe {
+    text-size-adjust: auto;
+    /* margin-bottom: 20px; */
+    grid-template-rows: 350px 200px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "textaboutme"
+    "profilepicture";
+}
 }
