@@ -17,6 +17,7 @@ header{
 .container{
   display: grid;
   grid-template-columns: 25% 75%;
+  row-gap: 0.5cm;
 }
 
 .hero-banner{
@@ -46,6 +47,8 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-top: 0px;
+  color: #2f2f2f;
 }
 
 h3 {
@@ -73,9 +76,7 @@ h6 {
 }
 
 p {
-  text-justify: auto;
   font-size: 18px;
-  margin: 0.5;
 }
 
 
@@ -84,7 +85,6 @@ p {
   width: 80%;
   align-items: center;
   justify-content: space-evenly;
-  color: aliceblue;
 }
 
 #navBar{
@@ -96,14 +96,14 @@ p {
 
 #navBar h1{
   width: 80%;
-  /* font-weight: 100; */
-  color: #010101;
+  font-weight: 150;
+  color: #2f2f2f;
 }
 
 #sampleWork {
   margin: 0px 5%;
   display: grid;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   grid-template-rows: 200px 200px 250px 250px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
@@ -112,10 +112,11 @@ p {
   "LED calculator"
   "pastel runbuddy";
 }
+
 #aboutMe {
   margin: 0px 6%;
   display: grid;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   grid-template-rows: 250px;
   grid-template-columns: 65% 35%;
   grid-template-areas:
@@ -125,7 +126,8 @@ p {
 
 .page-section {
   text-align: end;
-  margin-right: 0px;
+  padding-right: 10px;
+  border-right: 0.1cm solid #2f2f2f;
 }
 
 .heading {
@@ -190,22 +192,22 @@ p {
 
 #contact {
   display: inline-flex;
-  text-decoration-line: underline;
   font-size: 1.5em;
-  padding: 5px;
   align-items: center;
   justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 70em) {
   #navigation {
-    display: none; 
+    display: grid;
   }
+
   .icons {
-    margin-left: auto; 
+    margin-left: auto;
   }
+
   body{
-    background-color: rgb(227, 230, 230);
+    background-color: #e3e6e6;
   }
 }
 
@@ -213,9 +215,9 @@ p {
   body{
     background-color: whitesmoke;
   }
-  #headline {
+  .tagline {
     position: static;
-    margin: 20px;
+    margin: 30px;
   }
 
   #sampleWork {
