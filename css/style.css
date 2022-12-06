@@ -1,12 +1,19 @@
+/* Main color scheme */
+:root {
+  --primary-color: #2f2f2f;
+  --sec-color: #f9f5f0;
+}
+
 /* General styles */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  padding: 0;
+  /* padding: 0; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #f9f5f0;
+  background-color: var(--sec-color);
 }
 
 p {
@@ -22,7 +29,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-top: 0px;
-  color: #2f2f2f;
+  color: var(--primary-color);
 }
 
 h3 {
@@ -30,7 +37,7 @@ h3 {
   margin: 10px auto;
   line-height: 1.2;
   font-weight: 200;
-  color: #f9f5f0;
+  color: var(--sec-color);
 }
 
 h4 {
@@ -61,7 +68,7 @@ header{
 #navBar h1{
   width: 80%;
   font-weight: 150;
-  color: #2f2f2f;
+  color: var(--primary-color);
 }
 
 #navigation {
@@ -99,7 +106,7 @@ header{
 .page-section {
   text-align: end;
   padding-right: 10px;
-  border-right: 0.1cm solid #2f2f2f;
+  border-right: 0.1cm solid var(--primary-color);
 }
 
 #aboutMe {
@@ -133,7 +140,6 @@ header{
 #sampleWork {
   margin: 0px 5%;
   display: grid;
-  /* margin-bottom: 40px; */
   grid-template-rows: 200px 200px 250px 250px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
@@ -208,9 +214,8 @@ header{
 
   #aboutMe {
     text-size-adjust: auto;
-    /* margin-bottom: 20px; */
     grid-template-rows: 350px 200px;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-areas:
     "textaboutme"
     "profilepicture";
