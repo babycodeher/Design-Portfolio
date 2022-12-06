@@ -9,12 +9,16 @@ This work was completed to showcase my talent and skills as a designer and provi
 #### Portfolio Screenshot
 ![Screenshot 2022-12-06 at 15 59 37](https://user-images.githubusercontent.com/117525566/205963720-81e00f2d-333b-4ab9-ad53-26f72559041a.png)
 
+#### Link to deployed appilication 
+https://babycodeher.github.io/Design-Portfolio/
+
 ## Installation
 N/A
 
 ## Usage
 The portfolio has been designed using HTML and CSS.
 The links in the header section of the page redirects to specific sections of the page when clicked. The section containing samples of my work redirects you to web applications I have deployed. The links in the contact section opens to the various options for which you can get in touch.
+The profile is optimised for use on mobile devices
 
 ## Credits
 N/A
