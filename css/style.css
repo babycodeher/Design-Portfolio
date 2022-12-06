@@ -1,3 +1,4 @@
+/* General styles */
 * {
   box-sizing: border-box;
 }
@@ -8,36 +9,9 @@ body {
   background-color: #f9f5f0;
 }
 
-header{
-  background-color: #bbb8b8;
-  padding: 10px;
-  
+p {
+  font-size: 18px;
 }
-
-.container{
-  display: grid;
-  grid-template-columns: 25% 75%;
-  row-gap: 0.5cm;
-}
-
-.hero-banner{
-  display: grid;
-  height: 200px;
-  background-image: url("../images/02-hero-bg.jpg");
-  background-size: cover;
-  margin-bottom: 40px;
-  align-content: flex-end;
-}
-
-.tagline {
-  width: 300px;
-  height: 50px;
-  background: #605a5b;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  margin-left: 75%;
-
-} 
 
 h1 {
   font-size: 45px;
@@ -71,20 +45,10 @@ h5 {
   margin: 0;
 }
 
-h6 {
-  margin: 0;
-}
-
-p {
-  font-size: 18px;
-}
-
-
-#navigation {
-  display: flex;
-  width: 80%;
-  align-items: center;
-  justify-content: space-evenly;
+/* Header and main navigation */
+header{
+  background-color: #bbb8b8;
+  padding: 10px;
 }
 
 #navBar{
@@ -100,6 +64,72 @@ p {
   color: #2f2f2f;
 }
 
+#navigation {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero-banner{
+  display: grid;
+  height: 200px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  margin-bottom: 40px;
+  align-content: flex-end;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  row-gap: 0.5cm;
+}
+
+.tagline {
+  width: 300px;
+  height: 50px;
+  background: #605a5b;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  margin-left: 75%;
+}
+
+/* Grid CSS */
+.page-section {
+  text-align: end;
+  padding-right: 10px;
+  border-right: 0.1cm solid #2f2f2f;
+}
+
+#aboutMe {
+  margin: 0px 6%;
+  display: grid;
+  /* margin-bottom: 20px; */
+  grid-template-rows: 250px;
+  grid-template-columns: 65% 35%;
+  grid-template-areas:
+  "textaboutme profilepicture";
+}
+
+#textaboutme {
+  padding-right: 2em;
+  text-align: justify;
+}
+
+#profilepicture {
+  box-shadow: 5px 5px #605a5b;
+  border-radius: 10px;
+}
+
+.heading {
+  background-color: #605a5b;
+  color: white;
+  max-width: fit-content;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 #sampleWork {
   margin: 0px 5%;
   display: grid;
@@ -113,44 +143,18 @@ p {
   "pastel runbuddy";
 }
 
-#aboutMe {
-  margin: 0px 6%;
-  display: grid;
-  /* margin-bottom: 20px; */
-  grid-template-rows: 250px;
-  grid-template-columns: 65% 35%;
-  grid-template-areas:
-  "textaboutme profilepicture";
-}
-
-
-.page-section {
-  text-align: end;
-  padding-right: 10px;
-  border-right: 0.1cm solid #2f2f2f;
-}
-
-.heading {
-  background-color: #605a5b;
-  color: white;
-  max-width: fit-content;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
 .categoryWorkGrid {
   display: grid;
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
   background-repeat: no-repeat;
   margin: 5px;
   align-content: flex-end;
   cursor: pointer;
-  border: solid;
-  border-color: #605a5b;
-  border-width: 0.5em;
+  border: 0.5em solid #605a5b;
 }
 
+/* Sample work grid */
 #surf {
   grid-area: surf;
   background-image: url("../images/02-portfolio-4.jpg");
@@ -176,20 +180,6 @@ p {
   background-image: url("../images/02-run-buddy.jpg");
 }
 
-#profilepicture {
-  grid-area: profilepicture;
-  background-image: url("../images/profile-headshot.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  box-shadow: 5px 10px 10px black;
-}
-
-#textaboutme {
-  padding-right: 2em;
-  text-align: justify;
-}
-
 #contact {
   display: inline-flex;
   font-size: 1.5em;
@@ -198,12 +188,8 @@ p {
 }
 
 @media only screen and (max-width: 70em) {
-  #navigation {
+  #navigation, #contact {
     display: grid;
-  }
-
-  .icons {
-    margin-left: auto;
   }
 
   body{
@@ -220,6 +206,16 @@ p {
     margin: 30px;
   }
 
+  #aboutMe {
+    text-size-adjust: auto;
+    /* margin-bottom: 20px; */
+    grid-template-rows: 350px 200px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "textaboutme"
+    "profilepicture";
+  }
+
   #sampleWork {
     grid-template-rows: 200px 200px 200px 200px 200px; 
     grid-template-columns: 1fr;
@@ -230,14 +226,4 @@ p {
     "pastel" 
     "runbuddy";
   }
-
-  #aboutMe {
-    text-size-adjust: auto;
-    /* margin-bottom: 20px; */
-    grid-template-rows: 350px 200px;
-    grid-template-columns: 100%;
-    grid-template-areas:
-    "textaboutme"
-    "profilepicture";
-}
 }
